@@ -17,8 +17,8 @@ if __name__ == '__main__':
     data_source = "medmcqa"
 
     choose_path = ""
-    path = "/global_data/data/keerlu/medicalRL/code/data_construction/output/MedMCQA-2025-04-30.jsonl"
-    output_path = f"/global_data/data/keerlu/medicalRL/code/myverl/data/train_keerlu/MedMCQA/{data_source}-2025-04-30-multi.parquet"
+    path = "./data_construction/output/MedMCQA-2025-04-30.jsonl"
+    output_path = f"./myverl/data/train/MedMCQA/{data_source}-2025-04-30-multi.parquet"
 
     if not os.path.exists(os.path.dirname(output_path)):
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
